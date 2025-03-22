@@ -1,0 +1,373 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+
+} 
+
+
+body{
+    background: #E0D3B8;
+    
+    min-height: 100vh;
+    width: 100%;
+}
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+    background-color: #000000;
+
+}
+
+
+
+/* Aca le damos estilo  al encabezado del menu  */
+.logo {
+    font-size: 32px; 
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif; 
+    color: #2c3e50; 
+    text-decoration: none; 
+    letter-spacing: 2px; 
+    text-transform: uppercase; 
+    transition: color 0.3s ease-in-out, transform 0.2s;
+    display: inline-block;
+}
+
+.logo:hover {
+    color: #E0D3B8; 
+    transform: scale(1.1); 
+}
+
+header ul
+{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+header ul li 
+{
+    position: relative;
+    list-style: none;
+}
+header ul li a 
+{
+    position:relative ;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px; 
+    transition: 0.6s;
+
+}
+
+
+footer{
+       position: relative;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+       background: #086b04;
+       height: 190px;
+       padding: 20px 50px;
+       flex-direction: column;
+}
+
+footer .social-icons,
+footer .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .social-icons li,
+footer .menu li  {
+   list-style: none;
+}
+
+footer .social-icons li a  {
+   font-size: 2em;
+   color: #141414;
+   margin: 0 10px;
+   display: inline-block;
+   transition: 0.5s;
+
+}
+footer .social-icons li a:hover{
+    transform: translateY(-10px);
+}
+
+footer .menu li a {
+    font-size: 1.2em;
+     color: #141414;
+     margin: 0 10px;
+     display: inline-block;
+     text-decoration: none;
+     opacity: 0.75;
+     transition: 0.5s;
+
+}
+
+footer .menu li a:hover{
+    opacity: 1;
+
+}
+
+footer p {
+    color: #141414;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    opacity: 0.75;
+
+}
+
+
+footer .wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../img/banner.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1{
+    z-index: 1000;
+    width: 100%;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+
+}
+
+footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave-02 3s linear infinite;
+
+}
+
+@keyframes animateWave{
+    0%{
+        background-position-x: 1000px;
+
+    }
+    100%{
+        background-position-x: 0px;
+
+    }
+}
+
+@keyframes animateWave-02{
+    0%{
+        background-position-x: 0px;
+
+    }
+    100%{
+        background-position-x: 1000px;
+
+    }
+}
+
+/* Esta es la parte acerca del parque*/
+
+img{    
+   border-radius: 50%;
+   width: 200px;
+   height: 200px;
+}
+
+.circulo5{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.circulo7{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.img01, .img02, .img03, .img04{
+    text-align: end;
+    margin-right: 2px;
+}
+
+.descripcion:hover,
+.act01:hover, .act02:hover, .act03:hover, .act04:hover, 
+.act05:hover, .act06:hover, .act07:hover, .act08:hover, .act09:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.descripcion{
+    display: flex;
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 50px;
+    text-align:center;
+    align-items: center;
+    gap: 20px;
+    background-color: #9AAC74;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.txt{
+    padding-right: 30px;
+    font-family: Arial;
+}
+
+.txt p{
+    text-align: left;
+    color: whitesmoke;
+}
+
+.txt h3{
+    color: white;
+}
+
+.act01{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 50px;
+    text-align:center;
+    align-items: center;
+    gap: 20px;
+    background-color: #8E5B3C;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.act02{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 50px;
+    text-align:center;
+    align-items: center;
+    gap: 20px;
+    background-color: #b4A58B;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.act03{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 50px;
+    text-align:center;
+    align-items: center;
+    gap: 20px;
+    background-color: #A4A8BB;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.act04{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 50px;
+    text-align:center;
+    align-items: center;
+    gap: 20px;
+    background-color: #9aaf77;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.act05{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 50px;
+    text-align:center;
+    align-items: center;
+    gap: 20px;
+    background-color: #8B5E3C;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.act06{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 50px;
+    text-align:center;
+    align-items: center;
+    gap: 20px;
+    background-color: #b4A58B;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.act07{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 50px;
+    text-align:center;
+    align-items: center;
+    gap: 20px;
+    background-color: #a4a8bb;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.act08{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 50px;
+    text-align:center;
+    align-items: center;
+    gap: 20px;
+    background-color:#9aaf77;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.act09{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    text-align:center;
+    align-items: center;
+    gap: 20px;
+    background-color: #8B5E3C;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+/* Esta es la parte que termina acerca del parque*/
